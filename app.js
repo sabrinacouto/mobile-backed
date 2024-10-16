@@ -3,6 +3,9 @@ const app = express();
 const tarefaRoutes = require('./routes/tarefaRoutes');
 const userRoutes = require('./routes/userRoutes');
 const authMiddleware = require('./middlewares/authMiddleware');
+const cors = require('cors');
+
+app.use(cors()); // Inicializa o CORS
 
 // Middleware para JSON
 app.use(express.json());

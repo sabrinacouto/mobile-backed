@@ -45,6 +45,9 @@ exports.updateTarefa = (req, res) => {
         } else {
             res.status(404).json({ error: 'Tarefa não encontrada!' });
         }
+        if (req.user.role !== 'admin') {
+            return res.status(403).json({ error: 'Acesso negado. Apenas administradores podem atualizar ou deletar tarefas.' });
+        }
     });
 };
 
@@ -58,6 +61,9 @@ exports.deleteTarefa = (req, res) => {
             res.status(200).json({ message: 'Tarefa removida com sucesso!' });
         } else {
             res.status(404).json({ error: 'Tarefa não encontrada!' });
+        }
+        if (req.user.role !== 'admin') {
+            return res.status(403).json({ error: 'Acesso negado. Apenas administradores podem atualizar ou deletar tarefas.' });
         }
     });
 };
