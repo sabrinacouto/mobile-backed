@@ -13,5 +13,5 @@ Bem-vindo à **Lista de Tarefas**! Este é um aplicativo simples e intuitivo que
 - **Adicionar Tarefas**: Crie novas tarefas com um simples toque! ✨
 - **Editar Tarefas**: Modifique suas tarefas a qualquer momento. 🔄
 - **Excluir Tarefas**: Remova tarefas que você já concluiu. ❌
-- **Marcar como Concluída**: Marque suas tarefas como concluídas para uma melhor organização! ✅
-- **Armazenamento Local**: Suas tarefas são salvas localmente para fácil acesso. 💾
+
+
